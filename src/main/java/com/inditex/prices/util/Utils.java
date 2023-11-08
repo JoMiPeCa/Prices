@@ -27,14 +27,6 @@ public class Utils {
         return timestamp;
     }
 
-    public int toInt(String string) {
-        try {
-            return (Integer.parseInt(string));
-        } catch (NumberFormatException error) {
-            return (Integer.MIN_VALUE);
-        }
-    }
-
     public PricesResponseDTO wrapperPricesModelToPricesResponseDTO(PricesModel model) {
         return PricesResponseDTO.builder()
                 .identificadorProducto(null == model.getProductId() ? 0 : model.getProductId())
