@@ -37,7 +37,7 @@ class PricesServiceSpec extends Specification {
                 .identificadorCadena(marca)
                 .build()
 
-        def response = pricesService.obtenerPrecios(request);
+        def response = pricesService.obtenerPrecios(request)
 
         then: "Se procede a verificar la respuesta"
 

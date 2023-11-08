@@ -52,9 +52,9 @@ class Mock {
     }
 
     static stringTimestamp(String date) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        Date parsedDate = dateFormat.parse(date);
-        return new Timestamp(parsedDate.getTime());
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")
+        Date parsedDate = dateFormat.parse(date)
+        return new Timestamp(parsedDate.getTime())
     }
 
     static wrapperPricesModelToPricesResponseDTO(PricesModel model) {

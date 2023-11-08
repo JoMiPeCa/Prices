@@ -13,8 +13,6 @@ import java.util.Date;
 @Component
 public class Utils {
 
-    String EMPTY = "";
-
     public Timestamp stringToTimeStamp(String date) {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         try {
